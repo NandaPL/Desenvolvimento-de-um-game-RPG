@@ -1,4 +1,11 @@
-import javax.swing.JOptionPane;
+import Personagens.Personagem;
+
+import java.util.ArrayList;
+
 public class Principal {
+
+    public static void main(String[] args){
+
+    }
 
 }

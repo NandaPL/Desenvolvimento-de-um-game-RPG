@@ -1,4 +1,8 @@
-public class Personagem implements ComportamentoNormal{
+package Personagens;
+import Interfaces.ComportamentoNormal;
+import java.util.ArrayList;
+
+public class Personagem implements ComportamentoNormal {
     private String nome;
 
     public Personagem(String nome) {
