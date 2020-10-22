@@ -17,7 +17,8 @@ public class Principal {
         personagens[4] = new Dragao("Juju");
         personagens[5] = new Dragao("GG");
 
-
+        Jogo areaDejogo = new Jogo();
+        
     }
 
 }
