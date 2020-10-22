@@ -19,18 +19,17 @@ public class Personagem implements ComportamentoNormal {
 
     @Override
     public void andar(){
-
+        System.out.println("O cavaleiro" + getNome() + "está atacando.");
     }
 
     @Override
     public void guardarItem() {
-
+        System.out.println("O cavaleiro" + getNome() + "está atacando.");
     }
 
     @Override
     public void usarItem() {
-
+        System.out.println("O cavaleiro" + getNome() + "está atacando.");
     }
-
 
 }
