@@ -9,6 +9,7 @@ public class Principal {
 
     public static void main(String[] args){
         Personagem[] personagens = new Personagem[6];
+        Personagem persona;
 
         personagens[0] = new Cavaleiro("Joao");
         personagens[1] = new Cavaleiro("Astrovaldo");
@@ -18,7 +19,14 @@ public class Principal {
         personagens[5] = new Dragao("GG");
 
         Jogo areaDejogo = new Jogo();
-        
-    }
 
+        for(int i = 0; i < personagens.length; i++){
+            areaDejogo.ControlarAcoesDosPersonagens(personagens[i]);
+        }
+
+        persona = personagens[2];
+
+        Mago magoPersona = (Mago) persona;
+        magoPersona.invisibilidade();
+    }
 }

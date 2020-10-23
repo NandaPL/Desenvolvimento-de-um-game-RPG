@@ -10,31 +10,31 @@ public class Cavaleiro extends Personagem implements ComportamentoHeroico{
 
     @Override
     public void atacar() {
-        System.out.println("O cavaleiro" + getNome() + "está atacando.");
+        System.out.println("O cavaleiro " + getNome() + " está atacando.");
     }
 
     @Override
     public void defender() {
-        System.out.println("O cavaleiro" + getNome() + "defendeu.");
+        System.out.println("O cavaleiro " + getNome() + " defendeu.");
     }
 
     @Override
     public void saltar() {
-        System.out.println("O cavaleiro" + getNome() + "saltou.");
+        System.out.println("O cavaleiro " + getNome() + " saltou.");
     }
 
     @Override
     public void andar() {
-        System.out.println("O cavaleiro" + getNome() + "está andando.");
+        System.out.println("O cavaleiro " + getNome() + " está andando.");
     }
 
     @Override
     public void guardarItem() {
-        System.out.println("O cavaleiro" + getNome() + "está guardando a espada.");
+        System.out.println("O cavaleiro " + getNome() + " está guardando a espada.");
     }
 
     @Override
     public void usarItem() {
-        System.out.println("O cavaleiro" + getNome() + "está atacando.");;
+        System.out.println("O cavaleiro " + getNome() + " está atacando.");;
     }
 }

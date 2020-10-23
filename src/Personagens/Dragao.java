@@ -10,21 +10,23 @@ public class Dragao extends Personagem implements ComportamentoFeroz {
 
     @Override
     public void atirarFogo() {
-        System.out.println("O dragão" + getNome() + "está cuspindo fogo.");
+        System.out.println("O dragão " + getNome() + " está cuspindo fogo.");
     }
 
     @Override
     public void voar() {
-        System.out.println("O dragão" + getNome() + "está voando.");
+        System.out.println("O dragão " + getNome() + " está voando.");
     }
 
     @Override
     public void morder() {
-        System.out.println("O dragão" + getNome() + "está atacando com mordidas.");
+        System.out.println("O dragão " + getNome() + " está atacando com mordidas.");
     }
 
     @Override
     public void andar() {
-        System.out.println("O dragão" + getNome() + "está andando.");
+        System.out.println("O dragão " + getNome() + " está andando.");
     }
+
+    //Não há necessidade de uso de item pelo dragão
 }

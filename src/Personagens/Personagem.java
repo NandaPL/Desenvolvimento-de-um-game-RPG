@@ -31,5 +31,4 @@ public class Personagem implements ComportamentoNormal {
     public void usarItem() {
         System.out.println("O cavaleiro" + getNome() + "está atacando.");
     }
-
 }
