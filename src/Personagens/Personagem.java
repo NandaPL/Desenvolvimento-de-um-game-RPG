@@ -2,8 +2,9 @@ package Personagens;
 import Interfaces.ComportamentoNormal;
 import java.util.ArrayList;
 
-public class Personagem implements ComportamentoNormal {
-    private String nome;
+//Classe abstrata
+public abstract class Personagem implements ComportamentoNormal {
+    protected String nome;
 
     public Personagem(String nome) {
         setNome(nome);
@@ -17,18 +18,9 @@ public class Personagem implements ComportamentoNormal {
         this.nome = nome;
     }
 
-    @Override
-    public void andar(){
-        System.out.println("O cavaleiro" + getNome() + "está atacando.");
-    }
+    public abstract void andar();
 
-    @Override
-    public void guardarItem() {
-        System.out.println("O cavaleiro" + getNome() + "está atacando.");
-    }
+    public abstract void guardarItem();
 
-    @Override
-    public void usarItem() {
-        System.out.println("O cavaleiro" + getNome() + "está atacando.");
-    }
+    public abstract void usarItem();
 }

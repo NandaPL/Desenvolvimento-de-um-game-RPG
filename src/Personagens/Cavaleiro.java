@@ -1,11 +1,29 @@
 package Personagens;
-
+import javax.swing.JOptionPane;
 import Interfaces.ComportamentoHeroico;
 
 public class Cavaleiro extends Personagem implements ComportamentoHeroico{
 
     public Cavaleiro(String nome) {
         super(nome);
+    }
+
+    @Override
+    public void andar() {
+        String passos = JOptionPane.showInputDialog("Quantos passos o cavaleiro " + getNome() +" deseja andar?");
+        System.out.println("O cavaleiro " + getNome() + " andou " + passos + ".");
+    }
+
+    @Override
+    public void guardarItem() {
+        String item = JOptionPane.showInputDialog("Qual item " + getNome() + " deseja guardar?");
+        System.out.println("O cavaleiro " + getNome() + " guardou o(a) " + item + ".");
+    }
+
+    @Override
+    public void usarItem() {
+        String item = JOptionPane.showInputDialog("Qual item " + getNome() + " deseja usar?");
+        System.out.println("O cavaleiro " + getNome() + " usou o(a) " + item + ".");
     }
 
     @Override
@@ -23,18 +41,5 @@ public class Cavaleiro extends Personagem implements ComportamentoHeroico{
         System.out.println("O cavaleiro " + getNome() + " saltou.");
     }
 
-    @Override
-    public void andar() {
-        System.out.println("O cavaleiro " + getNome() + " está andando.");
-    }
 
-    @Override
-    public void guardarItem() {
-        System.out.println("O cavaleiro " + getNome() + " está guardando a espada.");
-    }
-
-    @Override
-    public void usarItem() {
-        System.out.println("O cavaleiro " + getNome() + " está atacando.");;
-    }
 }
