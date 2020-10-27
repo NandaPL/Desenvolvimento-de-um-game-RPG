@@ -28,6 +28,8 @@ public class Principal {
 
         Mago magoPersona = (Mago) persona;
         magoPersona.invisibilidade();
-        
+
+        System.out.println("Alunos: Caio Andrade Mota (1915310031) e Fernanda Pinto Lopes(1915310009)");
+        JOptionPane.showMessageDialog(null, "Alunos: Caio Andrade Mota (1915310031) e Fernanda Pinto Lopes(1915310009)");
     }
 }
