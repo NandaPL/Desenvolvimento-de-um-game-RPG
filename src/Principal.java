@@ -9,7 +9,6 @@ public class Principal {
     public static void main(String[] args){
         Personagem[] personagens = new Personagem[6];
 
-
         //Cavaleiro, Mago e Dragao sao Personagens
         personagens[0] = new Cavaleiro("Seiya");
         personagens[1] = new Mago("Merlim");
@@ -29,5 +28,6 @@ public class Principal {
 
         Mago magoPersona = (Mago) persona;
         magoPersona.invisibilidade();
+        
     }
 }
